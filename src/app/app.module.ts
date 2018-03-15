@@ -16,7 +16,13 @@ import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NgforComponent } from './ngfor/ngfor.component';
 import { ComponentinteractionComponent } from './componentinteraction/componentinteraction.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { ListComponent } from './list/list.component';
+import { ListdetailComponent } from './listdetail/listdetail.component';
+import { UsinghttpComponent } from './usinghttp/usinghttp.component';
 
+import { StudentrecordsService } from './studentrecords.service';
+import { HttpstudentService } from './httpstudent.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,13 +39,17 @@ import { PipesComponent } from './pipes/pipes.component';
     NgswitchComponent,
     NgforComponent,
     ComponentinteractionComponent,
-    PipesComponent
+    PipesComponent,
+    ListComponent,
+    ListdetailComponent,
+    UsinghttpComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [StudentrecordsService,HttpstudentService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
