@@ -11,7 +11,20 @@ import { Component, OnInit } from '@angular/core';
       {{name | titlecase}}<br>
       {{index | slice: 3}}<br>
       {{index | slice: 3:6}}<br>
-      {{student | json}}
+      {{student | json}}<br>
+
+      <{{5.56475 | number:'1.2-3'  }}<br>
+      {{5.56475 | number:'3.5-8' }}<br>
+      {{5.56475 | number:'3.1-2'  }}<br>
+      
+      {{0.25 | currency }}<br>
+      {{0.25 | currency: 'INR'  }}<br>
+      {{0.25 | currency: 'INR' :'code'  }}<br>
+
+      {{date}}<br>
+      {{date | date:'short'}}<br>
+      {{date | date:'shortDate'}}<br>
+      {{date | date :'shortTime'}}<br>
 
     </h3>
   `,
@@ -30,4 +43,5 @@ export class PipesComponent implements OnInit {
     firstname:"Siddhant",
     lastname:"Gupta"
   }
+  public date = new Date();
 }
