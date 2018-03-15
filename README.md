@@ -1,3 +1,9 @@
+# Motive
+to learn how angular works and use of some angular functions
+
+# prerequisites
+you should have knowledge about basic html css javascript.
+
 # Work
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
