@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
       {{index | slice: 3:6}}<br>
       {{student | json}}<br>
 
-      <{{5.56475 | number:'1.2-3'  }}<br>
+      {{5.56475 | number:'1.2-3'  }}<br>
       {{5.56475 | number:'3.5-8' }}<br>
       {{5.56475 | number:'3.1-2'  }}<br>
       

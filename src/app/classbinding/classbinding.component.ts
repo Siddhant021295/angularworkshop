@@ -45,7 +45,7 @@ export class ClassbindingComponent implements OnInit {
   public isSpecial = true;
 
   public messageClasses = {
-    "text-success": this.hasError,
+    "text-success": !this.hasError,
     "text-danger": this.hasError,
     "text-special": this.isSpecial
   }

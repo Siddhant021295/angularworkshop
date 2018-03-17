@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
   <h2>{{name.length}}</h2>
   <h2>{{name.toUpperCase()}}<h2>
   <h2>{{greetUser()}}</h2>  
-  <h2>{{location}}</h2>
+  <h2 style="color:blue">{{location}}</h2>
   <!--property Binding-->
   <input bind-disabled="isDisabled" id="{{myId}}" type="text" value ="siddhant"> 
   <input [id]="myId"  type="text" value ="siddhant">

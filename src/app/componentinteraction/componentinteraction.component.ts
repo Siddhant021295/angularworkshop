@@ -14,6 +14,7 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 })
 export class ComponentinteractionComponent implements OnInit {
   @Input() public parentData;
+  
   @Input('parentData1') public data;
 
   @Output() public childevent= new EventEmitter();
